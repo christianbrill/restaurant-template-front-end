@@ -26,14 +26,14 @@
 	--twitter: #1DADEA;
 
 	/* Fonts */
-	--heading-size: 40px;
+	--heading-size: 100px;
 	--catamaran: 'Catamaran', Arial, sans-serif;
 	--fontsize: 25px;
 
 	/* Sizes */
 	--box-padding: 1em;
 	--box-inside-padd: 3em;
-	--heading-padd: 1em;
+	--heading-padd: 0 1em 1em 1em;
 	--max-width: 50em;
 }
 
@@ -71,10 +71,15 @@ a {
 	text-decoration: none;
 }
 
+strong {
+	border-bottom: 5px solid #fff;
+}
 
-/* General
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.back-button svg {
+	height: 80px;
+	width: 80px;
+}
+
 .outer-wrap {
 	margin: 0 auto;
 	max-width: var(--max-width);
@@ -99,8 +104,17 @@ a {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-description {
 	background-color: var(--ono-ocker);
+	border: 50px solid #d9c9bf;
 	padding: var(--box-inside-padd);
 	width: 100%;
+}
+
+.resto-description__logo {
+	font-family: 'Gaegu', cursive;
+}
+
+.resto-description__about {
+	font-size: 50px;
 }
 
 .resto-description__logo {
@@ -307,5 +321,12 @@ a {
 /* MENU PAGE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-description__logo--menu-heading {
+	padding-top: 0;
+}
+
+.resto-menu {
+
+}
 
 /*# sourceMappingURL=styles.css.map */
