@@ -4,6 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Café du Stadion</title>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand|Catamaran" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -53,7 +54,16 @@
 
 		<!-- TODO -->
 		<div class="inner-wrap">
-			<div class="resto-gallery"></div>	
+			<div class="resto-gallery">
+				<div class="w3-content w3-display-container">
+				  <img class="mySlides" src="https://i.imgur.com/mnBpH5p.jpg" style="width:100%">
+				  <img class="mySlides" src="https://i.imgur.com/4u0Gn5q.jpg" style="width:100%">
+				  <img class="mySlides" src="https://i.imgur.com/n6ndpsw.jpg" style="width:100%">
+
+				  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+			</div>	
 		</div>
 
 		<div class="resto-social">
@@ -95,7 +105,12 @@
 		</div>
 	</div> <!-- .outer-wrap end -->
 
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- ScrollReveal -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<!-- FlexSlider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
 	<script>
 		// Code snippet to create the awesome reveal effect
 		window.sr = ScrollReveal({ reset: true });
@@ -110,6 +125,9 @@
 		}
 
 		chooseRandomColor();
+
+
+		// Image slider creation
 	</script>
 </body>
 </html>
