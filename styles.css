@@ -1,0 +1,201 @@
+/* Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+	/* Colors */
+	/* Coffee palette */
+	--cof-creme: #E1E6E2;
+	--cof-ocker: #E6C79A;
+	--cof-orange: #DC9D48;
+	--cof-brown: #A34706;
+	--cof-darkbrown: #4D0906;
+
+	/* Restaurant palette */
+	--res-green: #607258;
+	--res-brown: #C09A6C;
+	--res-orange: #C07044;
+	--res-red-light: #BB4436;
+	--res-red-dark: #A43B3B;
+
+	--ono-ocker: #E0D3CB;
+	--ono-brown: #BC9E7B;
+
+	--facebook: #3D5C97;
+	--instagram: #C21699;
+	--tripadvisor: #5A9445;
+	--twitter: #1DADEA;
+
+	/* Fonts */
+	--heading-size: 40px;
+	--hind: 'Catamaran', Arial, sans-serif;
+	--fontsize: 25px;
+
+	/* Sizes */
+	--box-padding: 1em;
+	--box-inside-padd: 3em;
+	--heading-padd: 1em;
+	--max-width: 50em;
+}
+
+
+/* General
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--hind);
+	font-size: var(--fontsize);
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 60px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+
+/* General
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.outer-wrap {
+	margin: 0 auto;
+	max-width: var(--max-width);
+	padding: var(--box-padding);
+	width: 100%;
+}
+
+.inner-wrap {
+	padding: var(--box-padding);
+	width: 100%;
+}
+
+
+/* Resto-description
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-description {
+	background-color: var(--ono-ocker);
+	padding: var(--box-inside-padd);
+	width: 100%;
+}
+
+.resto-description__logo {
+	font-size: var(--heading-size);
+	padding: var(--heading-padd);
+	text-align: center;
+}
+
+
+/* Resto-image
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-image {
+	background-image: url('header-img.jpeg');
+	background-size: cover;
+	height: 900px;
+	width: 100%;
+}
+
+
+/* Resto-menu, resto-booking
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-menu,
+.resto-booking {
+	background-color: #000;
+	padding-top: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.resto-menu__link,
+.resto-booking__link {
+	bottom: 0;
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 180px;
+	font-weight: bold;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	width: 100%;
+}
+
+.resto-booking {
+	background-color: var(--res-red-dark)
+}
+
+
+/* Resto-hours
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-hours {
+	background-color: var(--cof-ocker);
+	padding: var(--box-inside-padd);
+	text-align: center;
+	width: 100%;
+}
+
+.resto-hours__heading {
+	padding: var(--heading-padd);
+}
+
+
+/* Resto-social
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-gallery {
+	/* TODO */
+}
+
+
+/* Resto-social
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-social div.inner-wrap {
+	display: inline-block;
+	width: 49.5%;
+}
+
+.resto-social__item--facebook {
+	background-color: var(--facebook);
+}
+.resto-social__item--instagram {
+	background-color: var(--instagram);
+}
+.resto-social__item--tripadvisor {
+	background-color: var(--tripadvisor);
+}
+.resto-social__item--twitter {
+	background-color: var(--twitter);
+}
+
+
+
+
+/*# sourceMappingURL=styles.css.map */
