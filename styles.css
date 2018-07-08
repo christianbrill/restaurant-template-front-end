@@ -256,7 +256,7 @@ a {
 }
 
 
-/* Media queries
+/* Media queries Homepage
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 480px) {
@@ -264,6 +264,11 @@ a {
 	.resto-booking {
 		padding-top: 100%;
 		width: 100%;
+	}
+
+	/* MENU ITEM with margin */
+	div.inner-wrap--tiny:first-child {
+		margin-right: 12px;
 	}
 
 	.resto-menu__link,
@@ -277,16 +282,30 @@ a {
 	}
 }
 
-@media screen and (min-width: 560px) {
-	.inner-wrap--tiny {
-		width: 49.6%;
-	}
-}
-
 @media screen and (min-width: 768px) {
 	.resto-social div.inner-wrap {
 		width: 24.5%;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU PAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*# sourceMappingURL=styles.css.map */
