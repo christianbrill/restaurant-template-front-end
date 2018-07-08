@@ -3,8 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Café du Stadion</title>
-	<link href="https://fonts.googleapis.com/css?family=Quicksand|Catamaran" rel="stylesheet">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+
+	<!-- Glide Carousel stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.1.0/css/glide.core.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.1.0/css/glide.theme.min.css">
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +28,7 @@
 			<div class="resto-image"></div>
 		</div>		
 
-		<div class="inner-wrap reveal">
+		<div class="inner-wrap reveal inner-wrap--tiny">
 			<div class="resto-menu">
 				<a href="" class="resto-menu__link" id="menuColorChange" title="Show the menu">
 					Menu
@@ -32,9 +36,9 @@
 			</div>
 		</div>
 
-		<div class="inner-wrap reveal">
+		<div class="inner-wrap reveal inner-wrap--tiny">
 			<div class="resto-booking">
-				<a href="" class="resto-booking__link" title="Book a table here">
+				<a href="" class="resto-booking__link" title="Book a table here" id="bookNowColorChange">
 					Book now
 				</a>
 			</div>
@@ -52,18 +56,23 @@
 			</div>
 		</div>
 
-		<!-- TODO -->
-		<div class="inner-wrap">
+		<div class="inner-wrap reveal">
 			<div class="resto-gallery">
-				<div class="w3-content w3-display-container">
-				  <img class="mySlides" src="https://i.imgur.com/mnBpH5p.jpg" style="width:100%">
-				  <img class="mySlides" src="https://i.imgur.com/4u0Gn5q.jpg" style="width:100%">
-				  <img class="mySlides" src="https://i.imgur.com/n6ndpsw.jpg" style="width:100%">
-
-				  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				<div class="glide">
+				    <div class="glide__track" data-glide-el="track">
+				      <ul class="glide__slides">
+				        <li class="glide__slide"><img src="https://i.imgur.com/WZPTWfW.png" alt=""></li>
+				        <li class="glide__slide"><img src="https://i.imgur.com/mnBpH5p.jpg" alt=""></li>
+				        <li class="glide__slide"><img src="https://i.imgur.com/4u0Gn5q.jpg" alt=""></li>
+				        <li class="glide__slide"><img src="https://i.imgur.com/ssVdpss.png" alt=""></li>
+				      </ul>
+				    </div>
+				    <div class="glide__arrows" data-glide-el="controls">
+					    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+					    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 
 		<div class="resto-social">
@@ -92,14 +101,37 @@
 			</div>
 		</div>
 
-		<div class="inner-wrap">
+		<div class="inner-wrap reveal">
 			<div class="resto-events">
+				<h2 class="resto-events__main-heading">Events</h2>
 				<div class="resto-events__item">
-					<div class="resto-events__image"></div>
-					<div class="resto-events__description">
-						<h2 class="resto-events__heading">Name of event</h2>
-						<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur delectus corporis explicabo earum autem laborum voluptatibus minus quos, sint asperiores, reprehenderit provident facere. Earum eius recusandae beatae soluta maxime.</p>
-					</div>
+					<a href="" class="resto-events__link">
+						<div class="resto-events__image"></div>
+						<div class="resto-events__description">
+							<h2 class="resto-events__heading">Barbecue with friends</h2>
+							<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur delectus corporis explicabo earum autem ...</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="resto-events__item">
+					<a href="" class="resto-events__link">
+						<div class="resto-events__image"></div>
+						<div class="resto-events__description">
+							<h2 class="resto-events__heading">World Cup Screening</h2>
+							<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur delectus corporis explicabo earum autem ...</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="resto-events__item">
+					<a href="" class="resto-events__link">
+						<div class="resto-events__image"></div>
+						<div class="resto-events__description">
+							<h2 class="resto-events__heading">Happy Hour Day</h2>
+							<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur delectus corporis explicabo earum autem ...</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -107,10 +139,10 @@
 
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Slick Carousel -->
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<!-- ScrollReveal -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-	<!-- FlexSlider -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider-min.js"></script>
 	<script>
 		// Code snippet to create the awesome reveal effect
 		window.sr = ScrollReveal({ reset: true });
@@ -120,7 +152,7 @@
 
 		function chooseRandomColor() {
 			let color = colors[Math.floor(Math.random()*colors.length)];
-			document.getElementById('menuColorChange').style.color = color;
+			document.getElementById('bookNowColorChange').style.backgroundColor = color;
 			setTimeout(chooseRandomColor, 1500);
 		}
 
@@ -128,6 +160,7 @@
 
 
 		// Image slider creation
+		new Glide('.glide').mount();
 	</script>
 </body>
 </html>
