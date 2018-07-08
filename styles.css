@@ -114,7 +114,7 @@ strong {
 }
 
 .resto-description__about {
-	font-size: 50px;
+	font-size: 55px;
 }
 
 .resto-description__logo {
@@ -128,7 +128,7 @@ strong {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-image {
-	background-image: url('https://i.imgur.com/LkFJE3q.jpg');
+	background-image: url('https://i.imgur.com/TX5RXpJ.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -325,8 +325,62 @@ strong {
 	padding-top: 0;
 }
 
-.resto-menu {
+.resto-menu-drinks,
+.resto-menu-foods {
+	background-color: var(--cof-ocker);
+	padding: var(--box-inside-padd);
+}
 
+.resto-menu__section {
+	font-size: 50px;
+}
+
+.resto-menu__heading {
+	font-size: var(--heading-size);
+}
+
+.drink-item__flex,
+.food-item__flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.drink-item,
+.food-item {
+	padding: var(--box-inside-padd);
+	width: 100%;
+}
+
+.drink-item__description,
+.food-item__description {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.drink-item__description p,
+.food-item__description p {
+	font-size: 55px;
+}
+
+.drink-item__size,
+.food-item__size {
+	width: 70%;
+}
+
+.drink-item__price,
+.food-item__price {
+	width: 30%;
+}
+
+.drink-item__heading,
+.food-item__heading {
+	color: #fff;
+	font-size: 50px;
+}
+
+.drink-item__price,
+.food-item__price {
+	text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
