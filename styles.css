@@ -34,7 +34,7 @@
 	--box-padding: 1em;
 	--box-inside-padd: 3em;
 	--heading-padd: 0 1em 1em 1em;
-	--max-width: 50em;
+	--max-width: 45em;
 }
 
 
@@ -98,6 +98,26 @@ strong {
 	width: 49%;
 }
 
+.resto-update {
+	background: linear-gradient(
+	  to bottom, 
+	  var(--res-red-dark),
+	  var(--res-red-dark) 50%,
+	  var(--res-red-light) 50%,
+	  var(--res-red-light)
+	);
+	background-size: 100% 20%;
+	color: #fff;
+	padding: var(--box-inside-padd);
+	text-align: center;
+	width: 100%;
+}
+
+.resto-update__close {
+	color: #fff;
+	cursor: pointer;
+}
+
 
 /* Resto-description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,18 +130,20 @@ strong {
 }
 
 .resto-description__logo {
-	font-family: 'Gaegu', cursive;
+	background-image: url('https://i.imgur.com/7fkwAxZ.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 350px;
+	margin-bottom: 50px;
+	padding: var(--heading-padd);
+	width: 100%;
 }
 
 .resto-description__about {
 	font-size: 55px;
 }
 
-.resto-description__logo {
-	font-size: var(--heading-size);
-	padding: var(--heading-padd);
-	text-align: center;
-}
+
 
 
 /* Resto-image
@@ -195,6 +217,10 @@ strong {
 	padding: var(--heading-padd);
 }
 
+.resto-hours__contact-link a {
+	color: var(--res-red-dark);
+}
+
 
 /* Resto-gallery
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -262,7 +288,7 @@ strong {
 }
 
 .resto-events__item {
-	margin: 40px 0;
+	margin: 60px 0;
 }
 
 .resto-events__heading {
@@ -312,17 +338,14 @@ strong {
 
 
 
-
-
-
-
-
-
 /* MENU PAGE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-description__logo--menu-heading {
+	font-size: var(--heading-size);
+	padding: var(--heading-padd);
 	padding-top: 0;
+	text-align: center;
 }
 
 .resto-menu-drinks,
@@ -381,6 +404,37 @@ strong {
 .drink-item__price,
 .food-item__price {
 	text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+/* EVENTS PAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.resto-events__social-icons {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 50px 0;
+}
+
+.resto-events__social-icons i {
+	font-size: 3.5em;
+}
+
+.fa-facebook-square,
+.fa-twitter-square {
+	color: var(--cof-ocker);
+}
+
+.resto-hours__map iframe {
+	width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
