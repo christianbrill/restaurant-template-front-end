@@ -6,15 +6,37 @@
 	<title>Contact</title>
 	<link href="https://fonts.googleapis.com/css?family=Catamaran|Gaegu" rel="stylesheet">
 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 	<div class="outer-wrap">
-		<!-- <div class="resto-update">
-			<p class="resto-update__description"></p>
-			<span class="resto-update__close">X</span>
-		</div> -->
+
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="index.html">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="menu.html">Menu</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="events.html">Events</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
 		
 		<div class="inner-wrap">
 			<div class="resto-page-description">
@@ -38,7 +60,7 @@
 				<h2 class="resto-contact__heading">Get in touch with us</h2>
 				<ul class="resto-contact__list">
 					<li><p>Tel.: <a href="tel:661123456">661 123 456</a></p></li>
-					<li><p>Email: <a href="mailto:cafedustadion@gmail.com">cafedustadion@gmail.com</a></p></li>
+					<li><p>Email: <a href="mailto:cafedustadion@gmail.com">info@example.com</a></p></li>
 					<li>Address:</li>
 					<li><address>152 Route de Mondorf</address></li>
 					<li><address>L-3260 Bettembourg</address></li>
@@ -70,13 +92,75 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Footer -->
+		<div class="inner-wrap">
+			<footer class="page-footer font-small stylish-color-dark pt-4 reveal">
+		      <div class="container text-center text-md-left">
+		        <div class="row">
+		          <div class="col-md-3 offset-md-3 mx-auto padding">
+		            <p>
+		              <i class="fa fa-home mr-3"></i>152 Route de Mondorf, Bettembourg</p>
+		            <p>
+		              <i class="fa fa-envelope mr-3"></i>info@example.com</p>
+		            <p>
+		              <i class="fa fa-phone mr-3"></i>+ 661 123 456</p>
+		          </div>
+
+		          <div class="col-md-3 mx-auto margin-top padding">
+		            <ul class="list-unstyled">
+		              <li>
+		                <a href="index.html">Home</a>
+		              </li>
+		              <li>
+		                <a href="menu.html">Menu</a>
+		              </li>
+		              <li>
+		                <a href="contact.html">Contact</a>
+		              </li>
+		              <li>
+		                <a href="events.html">Events</a>
+		              </li>
+		              <li>
+		              	<a href="http://dinedesk.com" class="btn btn-warning btn-rounded">Book Now</a>
+		              </li>
+		            </ul>
+
+		          </div>
+		        </div>
+		        <!-- Grid row -->
+
+		      </div>
+
+		      <hr>
+
+		      <!-- Copyright -->
+		      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+		        <a href="https://regiotels.com/">RegiOtels</a>
+		      </div>
+		      <!-- Copyright -->
+		  </footer>
+		</div>
 	</div> <!-- .outer-wrap end -->
 
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<!-- ScrollReveal -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script>
+		$(document).scroll(function(event){
+			var topDistance = $(this).scrollTop();
+			console.log(topDistance);
+
+			if(topDistance > 75){
+				$("nav.navbar").attr("id", "navbar-black");
+			} else{
+				$("nav.navbar").removeAttr("id");
+			}
+		});
+
 		// Code snippet to create the awesome reveal effect
 		window.sr = ScrollReveal({ reset: true });
 		sr.reveal('.reveal', {duration: 700});

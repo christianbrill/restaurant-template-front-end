@@ -52,6 +52,11 @@ body {
 	padding: 0;
 }
 
+address {
+	font-style: italic;
+	margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	padding: 0;
@@ -61,12 +66,26 @@ h2 {
 	font-size: 30px;
 }
 
+h3 {
+	font-size: 28px;
+	margin: 10px 0;
+}
+
 ul {
 	list-style: none;
+	margin: 20px 0;
 	padding: 0;
 }
 
 a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
 	color: #000;
 	text-decoration: none;
 }
@@ -99,24 +118,28 @@ a {
 	padding-top: 0;
 }
 
-.resto-update {
-	background: linear-gradient(
-	  to bottom, 
-	  var(--res-red-dark),
-	  var(--res-red-dark) 50%,
-	  var(--res-red-light) 50%,
-	  var(--res-red-light)
-	);
-	background-size: 100% 20%;
-	color: #fff;
-	padding: var(--box-inside-padd);
-	text-align: center;
-	width: 100%;
+/* Navbar
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+nav.navbar {
+	background-color: #3e3e3e !important;
+	font-size: var(--fontsize);
+	margin: var(--box-padding);
+	margin-bottom: 0;
+	padding: 13px;
+	transition-duration: .5s;
 }
 
-.resto-update__close {
-	color: #fff;
-	cursor: pointer;
+#navbar-black {
+	background-color: #3d3d3d !important;
+}
+
+nav.navbar .nav-link {
+	color: #fff !important;
+}
+
+nav.navbar ul li.nav-item.active a {
+	color: var(--cof-orange) !important;
 }
 
 
@@ -125,8 +148,8 @@ a {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-description,
 .resto-page-description {
-	background-color: #000;
-	border: 20px solid #1a1a1a;
+	background-color: #1a1a1a;
+	border: 20px solid #272727;
 	color: #fff;
 	padding: var(--box-inside-padd);
 	width: 100%;
@@ -152,9 +175,9 @@ a {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-image {
-	background-image: url('https://i.imgur.com/UIRTwie.png');
+	background-image: url('https://i.imgur.com/FCTJqYy.jpg');
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 400px;
@@ -176,7 +199,7 @@ a {
 .resto-menu__link,
 .resto-booking__link {
 	bottom: 0;
-	color: #fff;
+	color: #fff !important;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -202,14 +225,26 @@ a {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-hours {
-	background-color: #d2e699;
+	background-color: #607258;
 	padding: var(--box-inside-padd);
 	text-align: center;
 	width: 100%;
 }
 
+.resto-hours__list {
+	color: #fff;
+}
+
+.resto-hours h3 {
+	font-size: 25px;
+}
+
+.resto-hours__heading {
+	color: var(--cof-ocker);
+}
+
 .resto-hours__contact-link a {
-	color: var(--facebook);
+	color: var(--cof-orange);
 }
 
 .opening-image-flex {
@@ -234,7 +269,7 @@ a {
 
 .glide__slide img {
 	height: 300px;
-	width: 130%;
+	width: 140%;
 }
 
 .glide__arrow {
@@ -278,15 +313,19 @@ a {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .resto-events {
-	background-color: var(--res-green);
+	background-color: #D6BBC9;
 	padding: var(--box-inside-padd);
 	width: 100%;
 }
 
 .resto-events__main-heading {
 	color: #fff;
-	padding: var(--heading-padd);
+	font-size: 2em;
 	text-align: center;
+}
+
+.resto-events__about {
+	color: #fff;
 }
 
 .resto-events__link {
@@ -302,6 +341,37 @@ a {
 }
 
 
+/* Footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+footer {
+	background-color: #3e3e3e;
+	color: #fff;
+}
+
+footer a,
+footer.nav-link,
+footer i {
+	color: var(--cof-orange) !important;
+}
+
+footer .margin-top {
+	margin-top: 40px;
+}
+
+footer .btn {
+	background-color: #fff;
+	border: none;
+	color: #000 !important;
+}
+
+footer ul {
+	margin: 0;
+}
+
+footer hr {
+	width: 80%;
+}
 
 
 
@@ -322,16 +392,19 @@ a {
 
 .resto-menu-drinks,
 .resto-menu-foods {
-	background-color: var(--cof-ocker);
+	background-color: #607259;
+	border: 20px solid #55654F;
 	padding: var(--box-inside-padd);
 	width: 100%;
 }
 
 .resto-menu__section {
+	color: #fff;
 	font-size: 25px;
 }
 
 .resto-menu__heading {
+	color: #fff;
 	font-size: var(--heading-size);
 }
 
@@ -370,17 +443,19 @@ a {
 
 .drink-item__size,
 .food-item__size {
+	color: #fff;
 	width: 70%;
 }
 
 .drink-item__price,
 .food-item__price {
+	color: #fff;
 	width: 30%;
 }
 
 .drink-item__heading,
 .food-item__heading {
-	color: #fff;
+	color: var(--cof-orange);
 	font-size: var(--fontsize);
 }
 
@@ -402,19 +477,23 @@ a {
 /* EVENTS PAGE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.resto-events__social-icons {
-	display: flex;
-	justify-content: space-evenly;
-	margin: 20px 0;
-}
-
 .resto-events__social-icons i {
 	font-size: 2.5em;
+	margin: 10px 10px 10px 0;
 }
 
 .fa-facebook-square,
 .fa-twitter-square {
 	color: var(--cof-ocker);
+}
+
+.resto-events__when {
+	color: var(--cof-ocker);
+	margin: 10px 0;
+}
+
+.resto-events--desktop {
+	background-color: #55654e;
 }
 
 
@@ -432,9 +511,18 @@ a {
 }
 
 .resto-contact {
-	background-color: #d2e699;
+	background-color: #3d3d3d;
+	color: #fff;
 	padding: var(--box-inside-padd);
 	text-align: center;
+	width: 100%;
+}
+
+.resto-contact__heading {
+	color: var(--cof-orange);
+}
+
+.resto-map {
 	width: 100%;
 }
 
@@ -444,7 +532,7 @@ a {
 }
 
 .resto-contact__list a {
-	color: var(--res-red-dark)
+	color: var(--cof-ocker);
 }
 
 
@@ -469,11 +557,7 @@ a {
 @media screen and (min-width: 400px) {
 	.glide__slide img {
 		height: 400px;
-		width: 100%;
-	}
-
-	.resto-booking {
-		margin-left: 3px;
+		width: 130%;
 	}
 }
 
@@ -487,9 +571,10 @@ a {
 @media screen and (min-width: 480px)  {
 	.resto-description {
 		border-width: 10px;
-		height: 450px;
+		height: 330px;
 		padding: 1em;
 		position: absolute;
+		text-align: center;
 		width: 300px;
 		z-index: 1000;
 	}
@@ -500,9 +585,16 @@ a {
 	}
 
 	.resto-image {
-		background-image: url('https://i.imgur.com/MucZ6Nx.png');
 		background-position: center;
 		height: 700px;
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.resto-menu__link,
+	.resto-booking__link,
+	.resto-events__main-heading {
+		font-size: 55px;
 	}
 }
 
@@ -575,6 +667,64 @@ a {
 	.resto-events {
 		padding: 3em;
 	}
+
+	.resto-contact,
+	.resto-map {
+		height: 400px;
+		width: 50%;
+	}
+
+	.resto-contact {
+		padding-top: 80px;
+	}
+
+	.resto-map iframe {
+		height: 400px;
+	}
+
+	.resto-events--desktop {
+		background-color: #607258;
+		display: flex;
+		flex-flow: row wrap;
+		padding: 0;
+	}
+
+	.resto-events__item--desktop {
+		border: 20px solid #55654e;
+		font-size: 19px;
+		height: 450px;
+		padding: 1em;
+		margin: 0;
+		width: 50%;
+	}
+
+	.resto-events__item--desktop:first-child {
+		border-right-width: 10px;
+		border-bottom-width: 10px;
+	}
+
+	.resto-events__item--desktop:nth-child(2) {
+		border-left-width: 10px;
+		border-bottom-width: 10px;
+	}
+
+	.resto-events__item--desktop:nth-child(3) {
+		border-right-width: 10px;
+		border-top-width: 10px;
+	}
+
+	.resto-events__item--desktop:last-child {
+		border-top-width: 10px;
+		border-left-width: 10px;
+	}
+
+	footer .margin-top {
+		margin-top: 0;
+	}
+
+	footer .padding {
+		padding: 2em 0;
+	}
 }
 
 @media screen and (min-width: 800px) {
@@ -610,12 +760,42 @@ a {
 	.resto-hours {
 		padding-top: 70px;
 	}
+
+	.resto-events__item--desktop {
+		font-size: 20px;
+	}
 }
 
 @media screen and (min-width: 930px) {
 	.resto-menu-drinks,
 	.resto-menu-foods {
 		width: 49%;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	nav.navbar .nav-link {
+		font-size: 27px;
+	}
+
+	nav.navbar ul {
+		margin: 0;
+	}
+
+	.resto-image,
+	.resto-description,
+	.resto-page-description {
+		margin-top: -90px;
+	}
+
+	nav.navbar {
+		background-color: transparent !important;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.resto-events__item--desktop {
+		font-size: 22px;
 	}
 }
 

@@ -10,23 +10,45 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.1.0/css/glide.core.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.1.0/css/glide.theme.min.css">
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- Bootstrap -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 	<div class="outer-wrap">
 
-		<!-- <div class="inner-wrap disappearOnClick">
-			<div class="resto-update">
-				<p class="resto-update__description">Our café will be closed on Sunday, 17.05.19.</p>
-				<p class="resto-update__close font-effect-anaglyph">X</p>
-			</div>
-		</div> -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="menu.html">Menu</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="contact.html">Contact</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="events.html">Events</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
 		
 		<div class="inner-wrap">
 			<div class="resto-description">
 				<div class="resto-description__logo"></div>
-				<div class="resto-description__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellendus ipsam ad doloremque blanditiis, natus esse quidem obcaecati minus cupiditate debitis voluptatem distinctio nesciunt mollitia enim illo sit deserunt incidunt.</div>
+				<div class="resto-description__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum repellendus ipsam ad doloremque blanditiis.</div>
 			</div>
 
 			<div class="resto-image"></div>
@@ -50,7 +72,7 @@
 
 		<div class="inner-wrap inner-wrap--no-top-padd">
 			<div class="opening-image-flex">
-				<div class="resto-hours">
+				<div class="resto-hours reveal">
 					<h2 class="resto-hours__heading">Opening Hours</h2>
 					<ul class="resto-hours__list">
 						<li><h3>Sunday - Friday</h3></li>
@@ -63,14 +85,13 @@
 					</div>
 				</div>
 
-				<div class="resto-gallery">
+				<div class="resto-gallery reveal">
 					<div class="glide">
 					    <div class="glide__track" data-glide-el="track">
 					      <ul class="glide__slides">
-					        <li class="glide__slide"><img src="https://i.imgur.com/mnBpH5p.jpg" alt=""></li>
-					        <li class="glide__slide"><img src="https://i.imgur.com/WZPTWfW.png" alt=""></li>
-					        <li class="glide__slide"><img src="https://i.imgur.com/4u0Gn5q.jpg" alt=""></li>
-					        <li class="glide__slide"><img src="https://i.imgur.com/ssVdpss.png" alt=""></li>
+					        <li class="glide__slide"><img src="https://i.imgur.com/LCpvLR9.jpg" alt=""></li>
+					        <li class="glide__slide"><img src="https://i.imgur.com/H3wn6sF.jpg" alt=""></li>
+					        <li class="glide__slide"><img src="https://i.imgur.com/VKcRmBo.jpg" alt=""></li>
 					      </ul>
 					    </div>
 					    <div class="glide__arrows" data-glide-el="controls">
@@ -81,40 +102,6 @@
 				</div>
 			</div>
 		</div>
-		
-		<!-- <div class="inner-wrap inner-wrap--no-top-padd inner-wrap--big-screen reveal">
-			<div class="resto-hours">
-				<h2 class="resto-hours__heading">Opening Hours</h2>
-				<ul class="resto-hours__list">
-					<li><h3>Sunday - Friday</h3></li>
-					<li><p>10:00 AM - 1:00 AM</p></li>
-					<li><h3>Saturday</h3></li>
-					<li><p>closed</p></li>
-				</ul>
-				<div class="resto-hours__contact-link">
-					<a href="contact.html"><h2>Contact Us</h2></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="inner-wrap inner-wrap--big-screen reveal">
-			<div class="resto-gallery">
-				<div class="glide">
-				    <div class="glide__track" data-glide-el="track">
-				      <ul class="glide__slides">
-				        <li class="glide__slide"><img src="https://i.imgur.com/WZPTWfW.png" alt=""></li>
-				        <li class="glide__slide"><img src="https://i.imgur.com/mnBpH5p.jpg" alt=""></li>
-				        <li class="glide__slide"><img src="https://i.imgur.com/4u0Gn5q.jpg" alt=""></li>
-				        <li class="glide__slide"><img src="https://i.imgur.com/ssVdpss.png" alt=""></li>
-				      </ul>
-				    </div>
-				    <div class="glide__arrows" data-glide-el="controls">
-					    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-					    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 		<div class="inner-wrap">
 			<div class="resto-social">
@@ -138,47 +125,80 @@
 		
 		<div class="inner-wrap reveal">
 			<div class="resto-events">
-				<a href="events.html"><h2 class="resto-events__main-heading">Events</h2></a>
-				<div class="resto-events__item">
-					<a href="events.html" class="resto-events__link">
-						<div class="resto-events__image"></div>
-						<div class="resto-events__description">
-							<h2 class="resto-events__heading">Barbecue with friends</h2>
-							<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur delectus corporis explicabo earum autem ...</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="resto-events__item">
-					<a href="events.html" class="resto-events__link">
-						<div class="resto-events__image"></div>
-						<div class="resto-events__description">
-							<h2 class="resto-events__heading">World Cup Screening</h2>
-							<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="resto-events__item">
-					<a href="events.html" class="resto-events__link">
-						<div class="resto-events__image"></div>
-						<div class="resto-events__description">
-							<h2 class="resto-events__heading">Happy Hour Day</h2>
-							<p class="resto-events__about">Lorem ipsum dolor sit amet, consectetur adipisicing elit cum consectetur delectus.</p>
-						</div>
-					</a>
-				</div>
+				<a href="events.html"><h2 class="resto-events__main-heading">EVENTS</h2></a>
 			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="inner-wrap">
+			<footer class="page-footer font-small stylish-color-dark pt-4 reveal">
+		      <div class="container text-center text-md-left">
+		        <div class="row">
+		          <div class="col-md-3 offset-md-3 mx-auto padding">
+		            <p>
+		              <i class="fa fa-home mr-3"></i>152 Route de Mondorf, Bettembourg</p>
+		            <p>
+		              <i class="fa fa-envelope mr-3"></i>info@example.com</p>
+		            <p>
+		              <i class="fa fa-phone mr-3"></i>+ 661 123 456</p>
+		          </div>
+
+		          <div class="col-md-3 mx-auto margin-top padding">
+		            <ul class="list-unstyled">
+		              <li>
+		                <a href="index.html">Home</a>
+		              </li>
+		              <li>
+		                <a href="menu.html">Menu</a>
+		              </li>
+		              <li>
+		                <a href="contact.html">Contact</a>
+		              </li>
+		              <li>
+		                <a href="events.html">Events</a>
+		              </li>
+		              <li>
+		              	<a href="http://dinedesk.com" class="btn btn-warning btn-rounded">Book Now</a>
+		              </li>
+		            </ul>
+
+		          </div>
+		        </div>
+		        <!-- Grid row -->
+
+		      </div>
+
+		      <hr>
+
+		      <!-- Copyright -->
+		      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+		        <a href="https://regiotels.com/">RegiOtels</a>
+		      </div>
+		      <!-- Copyright -->
+		  </footer>
 		</div>
 	</div> <!-- .outer-wrap end -->
 
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- BS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<!-- Slick Carousel -->
 	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<!-- ScrollReveal -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script>
+		$(document).scroll(function(event){
+			var topDistance = $(this).scrollTop();
+			console.log(topDistance);
+
+			if(topDistance > 680){
+				$("nav.navbar").attr("id", "navbar-black");
+			} else{
+				$("nav.navbar").removeAttr("id");
+			}
+		});
+
 		// Event listener so people can close the update when clicking on X
 		$(".resto-update__close").click(function() {
 			$(".disappearOnClick").css("display","none");
