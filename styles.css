@@ -118,6 +118,10 @@ a:active {
 	padding-top: 0;
 }
 
+.back-button {
+	z-index: 3000 !important;
+}
+
 /* Navbar
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -786,6 +790,10 @@ footer hr {
 	.resto-description,
 	.resto-page-description {
 		margin-top: -90px;
+	}
+
+	.resto-page-description {
+		padding-top: 60px;
 	}
 
 	nav.navbar {
